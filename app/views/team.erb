@@ -8,7 +8,15 @@
   </head>
 
   <body>
+    <h1><%= @team.name %></h1>
+    <h4><%= @pirate.name %></h2>
 
-
+    <h2>Ships:</h2>
+      <% @ships.each do |ship| %>
+        <p><%= ship.name %></p>
+        <p><%= ship.type %></p>
+        <p><%= ship.booty %></p>  
+        <% end %>
+        
   </body>
 </html>

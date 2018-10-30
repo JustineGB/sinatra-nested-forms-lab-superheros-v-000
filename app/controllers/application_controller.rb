@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './config/environment'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -13,6 +14,7 @@ class App < Sinatra::Base
       @teams = Team.new(params[:team])
        params[:team][:heros].each do |details|
          Hero.new(details)
+         binding.pry 
        end
        @heros = Hero.all
       erb :team

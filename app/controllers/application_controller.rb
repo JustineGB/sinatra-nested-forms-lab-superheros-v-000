@@ -14,7 +14,7 @@ class App < Sinatra::Base
       @teams = Team.new(params[:team])
        params[:team][:heros].each do |details|
          Hero.new(details)
-         binding.pry 
+         binding.pry
        end
        @heros = Hero.all
       erb :team

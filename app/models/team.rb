@@ -7,7 +7,6 @@ class Team
   TEAMS = []
 
   def initialize(params)
-    binding.pry
     @name = params[:name]
     @motto = params[:motto]
     TEAMS << self

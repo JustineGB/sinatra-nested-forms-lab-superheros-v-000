@@ -1,7 +1,7 @@
 require 'pry'
 
 class Team
-  #has_many :ships
+  #has_many :heros
   attr_reader :name, :motto
 
   TEAMS = []

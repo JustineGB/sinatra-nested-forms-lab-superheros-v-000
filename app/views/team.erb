@@ -12,10 +12,10 @@
     <h4><%= @team.motto %></h2>
 
     <h2>Heros:</h2>
-      <% @ships.each do |ship| %>
-        <p><%= ship.name %></p>
-        <p><%= ship.type %></p>
-        <p><%= ship.booty %></p>  
+      <% @heros.each do |hero| %>
+        <p><%= hero.name %></p>
+        <p><%= hero.power %></p>
+        <p><%= hero.bio %></p>  
         <% end %>
         
   </body>

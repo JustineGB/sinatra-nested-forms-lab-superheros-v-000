@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Superhero Teams and Heroes!</title>
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+  </head>
 
+  <body>
+    <h1>Welcome to the Superhero Lab! Please fill out the form below to create your own Superhero Team and its Team Members!</h1>
+    <form method="post" action="/teams">
+      <h3><label for="team[name]"> Team Name: </label>
+        <input id="team[name]" type="text" name="team[name]"></h3>
+      <p><label for="team[motto]"> Team Motto: </label>
+        <input id="team[motto]" type="text" name="team[motto]"></p>
+
+      <h5><label for="member1_name"> First Team Member Name: </label>
+        <input id="member1_name" type="text" name="team[members][][name]"></h5>
+      <p><label for="member1_power"> Power: </label>
+        <input id="member1_power" type="text" name="team[members][][power]"></p>
+      <p><label for="member1_bio"> Bio: </label>
+        <input id="member1_bio" type="text" name="team[members][][bio]"></p>
+
+      <h5><label for="member2_name"> Second Team Member Name: </label>
+        <input id="member2_name" type="text" name="team[members][][name]"></h5>
+        <p><label for="member2_power"> Power: </label>
+          <input id="member2_power" type="text" name="team[members][][power]"></p>
+        <p><label for="member2_bio"> Bio: </label>
+          <input id="member2_bio" type="text" name="team[members][][bio]"></p>
+
+      <h5><label for="member3_name"> Third Team Member Name: </label>
+        <input id="member3_name" type="text" name="team[members][][name]"></h5>
+        <p><label for="member3_power"> Power: </label>
+          <input id="member3_power" type="text" name="team[members][][power]"></p>
+        <p><label for="member3_bio"> Bio: </label>
+          <input id="member3_bio" type="text" name="team[members][][bio]"></p>
+
+      <input name="submit" id="Submit" value="Submit" type="submit">
+    </form>
+
+
+  </body>
+
+</html>
